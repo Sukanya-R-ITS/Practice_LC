@@ -26,6 +26,20 @@ Note:
     1 <= arr.length <= 10000
     0 <= arr[i] <= 9
 """
+
+
+
+i=0
+        while i<len(arr):
+            if arr[i]==0:
+                arr.pop()
+                arr.insert(i+1, 0)
+                i+=1
+            i+=1
+        
+        
+        
+------------------------------------------------------------------------------------------------
 class Solution(object):
     def duplicateZeros(self, arr):
         """
