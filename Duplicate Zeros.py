@@ -32,23 +32,21 @@ class Solution(object):
         :type arr: List[int]
         :rtype: None Do not return anything, modify arr in-place instead.
         """
-        arr2 = [i for i in arr]
-        print(arr2)
+        arra = [i for i in arr]
+        print(arra)
+        i=0
+        j = 0
+        arra = [i for i in arr]
         i=0
         j = 0
         while i < len(arr):
-            print("J" + str(j))
-            print("I" + str(i))
-            print("arr2[j]" + str(arr2[j]))
-            if not arr2[j]:
-                #arr[i] = 0
-                print("inside loop")
-                print("I: " + str(i) + "J: " + str(j))
+            if not arra[j]:
+                arr[i] = 0
                 i+=1
                 if i<len(arr):
                     arr[i] = 0
             else:
-                arr[i] = arr2[j]
+                arr[i] = arra[j]
             j+=1
             i+=1        
                 
