@@ -34,3 +34,24 @@ class Solution(object):
         arr=[max(arr[i+1:])  if i<len(arr)-1 else -1 for i in range(len(arr))]    
             
         return arr
+       
+       
+       
+---------------------
+""" 
+Efficent solution
+sample 14900 KB submission
+
+class Solution(object):
+    def replaceElements(self, arr):
+        """
+        :type arr: List[int]
+        :rtype: List[int]
+        """
+        for i in range(1,len(arr)):
+            arr[i-1] = max(arr[i:]) 
+        arr[-1]=-1
+        
+        return arr
+
+"""
